@@ -1,16 +1,15 @@
 # EVM plus Deep Learning approach for Remote Heart Rate Estimation
-This repository contains the code developed for a Master's dissertation by Gonçalo Rodrigues, a student at Faculdade de Ciências da Universidade de Lisboa (FCUL). The dissertation explores an approach combining Eulerian Video Magnification (EVM), remote Photoplethysmography (rPPG) and deep learning, aiming to enhance performance and efficiency by utilizing Long Short-Term Memory (LSTM) networks combined with 1D Convolutions.
+This repository contains the code developed for a Master's dissertation by Gonçalo Rodrigues, a student at Faculdade de Ciências da Universidade de Lisboa (FCUL). The dissertation explores an approach combining remote Photoplethysmography (rPPG), Eulerian Video Magnification (EVM), and deep learning, aiming to estimate the Heart Rate with enhanced performance and efficiency by utilizing Long Short-Term Memory (LSTM) networks combined with 1D Convolutions.
 
 ## Overview
 This project explores an approach, utilizing LSTM networks combined with 1D Convolutions, to perform heart rate estimation based on facial videos. Unlike the usual CNN-based methods, this approach offers faster processing, potentially making the model more efficient for real-time applications.
 
 ## Key Features
 LSTM and 1D Convolutional Architecture: By leveraging LSTMs, the model effectively captures temporal dependencies in the video data, while the 1D convolutions provide efficient feature extraction.
-Faster Processing: The combined use of LSTMs and 1D convolutions reduces computational load, resulting in quicker video processing compared to traditional CNN-based methods.
 Open Source: All code related to this project is available on GitHub for further exploration, replication, and improvement.
 
 ## Dataset
-The original Dataset is available on request.
+The original Dataset is available on request. The dataset consists of various facial videos accompanied by corresponding electrocardiogram signals. Its purpose is to support research in remote photoplethysmography (rPPG) applications and Eulerian video magnification, developing innovative approaches to measure biomedical signals from videos.
 The dataset consists of 27 subjects (13M, 14F), each with up to 90 videos of 20 seconds. The original videos were recorded in 10-minute segments under natural lighting conditions, divided into 30 intervals of 20 seconds each. For each interval, three regions were extracted: Forehead, Cheek1, and Cheek2, resulting in a total of 90 videos per subject. The videos are organized as follows:
 	- Subject Number: From 1 to 27
 	- Region: Forehead, Cheek1 (right), Cheek2 (left)
